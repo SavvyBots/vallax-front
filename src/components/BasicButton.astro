@@ -1,0 +1,13 @@
+---
+interface Props {
+    content: string;
+    class_p?: string;
+}
+
+const { content = "Vallax", class_p } = Astro.props;
+---
+
+<button
+    class={`bg-primary text-background rounded-2xl p-5 px-20 text-2xl font-medium ${class_p} hover:cursor-pointer hover:bg-secondary transition duration-300`}
+    >{content}</button
+>

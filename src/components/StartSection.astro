@@ -1,0 +1,33 @@
+---
+import BasicButton from "./BasicButton.astro";
+---
+
+<section class="flex justify-between h-screen items-center min-h-screen border">
+    <!-- Section Vallax Pet -->
+    <section>
+        <img
+            src="/src/assets/vallax-pet.png"
+            width="350"
+            height="350"
+            alt="Mascota Vallax"
+        />
+    </section>
+    <!-- Section Slogan -->
+    <section class="flex flex-col flex-grow items-center justify-center h-full">
+        <div class="flex flex-col gap-8">
+            <h1 class="text-5xl font-bold">¡Hola, soy Vallax!</h1>
+            <span class="text-2xl text-center max-w-[25rem] mx-auto">
+                Te aviso al instante cuando aparece justo lo que buscas
+            </span>
+        </div>
+
+        <div class="items-center text-center flex flex-col gap-5 mt-15">
+            <div class="flex justify-center w-[30rem]">
+                <BasicButton content="EMPIEZA AHORA" class_p="w-full" />
+            </div>
+            <span class="text-2xl hover:cursor-pointer">
+                Ver documentación
+            </span>
+        </div>
+    </section>
+</section>
