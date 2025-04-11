@@ -1,6 +1,7 @@
 ---
 import "./src/styles/global.css";
 import "@fontsource-variable/lexend";
+import FooterSection from "../components/FooterSection.astro";
 ---
 
 <!doctype html>
@@ -13,7 +14,7 @@ import "@fontsource-variable/lexend";
 		<title>Vallax</title>
 	</head>
 	<body
-		class="bg-background h-screen flex flex-col text-text p-5 gap-10 px-100"
+		class="bg-background h-screen flex flex-col text-text p-5 gap-10 px-100 relative"
 	>
 		<slot />
 	</body>

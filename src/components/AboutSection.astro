@@ -1,3 +1,7 @@
+---
+import CardBasic from "./CardBasic.astro";
+---
+
 <section class="">
     <nav class="flex">
         <img
@@ -13,4 +17,35 @@
             >
         </div>
     </nav>
+    <div class="flex flex-col gap-5 mt-20">
+        <div class="flex grow justify-start p-10 gap-20">
+            <CardBasic
+                title="Tres cuerpos"
+                num="1"
+                content="Wallapop y Vinted, un caos. Vallax lo resuelve fácil."
+                slogan="¡Todo bajo control!"
+            />
+
+            <CardBasic
+                title="Rápido y sin complicaciones"
+                num="2"
+                content="Configura Vallax en minutos y empieza a ahorrar tiempo desde el primer clic."
+                slogan="¡Así da gusto!"
+            />
+        </div>
+        <div class="flex grow justify-start p-10 gap-20">
+            <CardBasic
+                title="Notificaciones en tiempo real"
+                num="3"
+                content="Entérate al instante de cualquier novedad. Siempre un paso por delante."
+                slogan="¡Nada se me escapa!"
+            />
+            <CardBasic
+                title="Filtros potentes, uso fácil"
+                num="4"
+                content="Crea filtros simples o avanzados según tus necesidades, sin complicaciones."
+                slogan="¡No hace falta ser un genio!"
+            />
+        </div>
+    </div>
 </section>
