@@ -2,12 +2,17 @@
 interface Props {
     title: string;
     src: string;
+    url: string;
 }
 
-const { title = "", src = "" } = Astro.props;
+const { title = "", src = "", url = "" } = Astro.props;
 ---
 
-<div class="flex flex-col items-center text-white gap-2">
-    <img src={src} width="30" height="30" />
+<a
+    class="flex flex-col items-center text-white gap-2 hover:scale-105 duration-150"
+    href={url}
+    target="_blank"
+>
+    <img src={src} width="30" height="30" class="" />
     <span>{title}</span>
-</div>
+</a>

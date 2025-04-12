@@ -1,7 +1,6 @@
 ---
 import "./src/styles/global.css";
 import "@fontsource-variable/lexend";
-import FooterSection from "../components/FooterSection.astro";
 ---
 
 <!doctype html>
@@ -9,13 +8,9 @@ import FooterSection from "../components/FooterSection.astro";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
 		<title>Vallax</title>
 	</head>
-	<body
-		class="bg-background h-screen flex flex-col text-text p-5 gap-10 px-100 relative"
-	>
+	<body class="bg-background h-screen flex flex-col text-text relative">
 		<slot />
 	</body>
 </html>
