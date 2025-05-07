@@ -1,19 +1,12 @@
 ---
+import AboutSection from "../sections/AboutSection.astro";
+import FirstSection from "../sections/FirstSection.astro";
 import Nav from "../components/Nav.astro";
-import StartSection from "../components/StartSection.astro";
-import AboutSection from "../components/AboutSection.astro";
-import PayPlansSection from "../components/PayPlansSection.astro";
-import FooterSection from "../components/FooterSection.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<div class="p-5 gap-10 px-100 flex flex-grow flex-col">
-		<Nav />
-		<StartSection />
-		<AboutSection />
-		<PayPlansSection />
-	</div>
-
-	<FooterSection />
+	<Nav />
+	<FirstSection />
+	<AboutSection />
 </Layout>

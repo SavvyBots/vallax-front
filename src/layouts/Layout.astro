@@ -1,6 +1,15 @@
 ---
 import "./src/styles/global.css";
-import "@fontsource-variable/lexend";
+
+import "@fontsource/poppins/100.css";
+import "@fontsource/poppins/200.css";
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+import "@fontsource/poppins/800.css";
+import "@fontsource/poppins/900.css";
 ---
 
 <!doctype html>
@@ -10,17 +19,7 @@ import "@fontsource-variable/lexend";
 		<meta name="viewport" content="width=device-width" />
 		<title>Vallax</title>
 	</head>
-	<body class="bg-background h-screen flex flex-col text-text relative">
+	<body class="bg-background">
 		<slot />
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		font-family: "Lexend Variable", sans-serif;
-	}
-</style>
