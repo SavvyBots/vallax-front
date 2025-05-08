@@ -3,21 +3,32 @@ import AboutCard from "../components/AboutCard.astro";
 import AboutCardTwo from "../components/AboutCardTwo.astro";
 ---
 
-<section class="flex flex-col items-center mt-30 borders relative p-30">
+<section
+    class="flex flex-col items-center mt-30 borders relative p-30 xl:mt-40"
+>
     <nav class="flex items-center gap-4">
         <h1>Como funciona</h1>
     </nav>
-    <div class="grid grid-cols-2 mt-20 w-full gap-20 relative">
-        <img src="/src/assets/arrow.svg" class="absolute right-15 top-30" />
+    <div
+        class="grid grid-cols-2 mt-20 w-full gap-20 relative lg:flex lg:justify-center lg:gap-60"
+    >
+        <img
+            src="/src/assets/arrow.svg"
+            class="absolute right-15 top-30 lg:hidden"
+        />
         <img
             src="/src/assets/arrow_reverse.svg"
-            class="absolute left-20 bottom-0 -translate-y-[-3rem]"
+            class="absolute top-30 lg:top-60 lg:right-40 lg:rotate-[55deg] lg:scale-x-[-1] hidden lg:flex xl:right-90"
+        />
+        <img
+            src="/src/assets/arrow_reverse.svg"
+            class="absolute left-20 bottom-0 -translate-y-[-3rem] lg:left-40 lg:rotate-[-50deg] lg:-translate-y-[-10rem] xl:left-90"
         />
         <AboutCard />
-        <div class="row-start-2 col-start-2">
+        <div class="lg:row-start-1 row-start-2 col-start-2">
             <AboutCardTwo />
         </div>
     </div>
 
-    <img src="/src/assets/phone.svg" class="row-start-3 mt-20" />
+    <img src="/src/assets/phone.svg" class="row-start-3 mt-20 lg:mt-40" />
 </section>
