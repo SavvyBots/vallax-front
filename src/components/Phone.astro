@@ -1,0 +1,54 @@
+---
+export interface Props {
+    class?: string;
+}
+const { class: className = "" } = Astro.props;
+---
+
+<div
+    class={`${className}  rounded-[14px] w-60 h-96 flex flex-col gap-3 p-2 justify-between`}
+>
+    <div class="flex gap-3">
+        <div
+            class="w-full flex bg-my-yellow h-25 rounded-tl-[14px] border-2 border-primary items-center justify-center"
+        >
+            <img src="/src/assets/snipper.svg" width="50px" />
+        </div>
+        <div
+            class="w-full flex bg-secondary h-25 rounded-tr-[14px] border-2 border-primary items-center justify-center"
+        >
+            <img src="/src/assets/siren.svg" width="50px" />
+        </div>
+    </div>
+    <div
+        class="flex w-full flex-grow flex-col rounded-b-[14px] border-2 border-primary"
+    >
+        <!-- Nav del tlf -->
+        <div class="flex items-center p-2">
+            <img src="/src/assets/vallax-think.svg" class="w-10" />
+            <div class="flex flex-col gap-1">
+                <img src="/src/assets/bell.svg" class="w-7" />
+                <span class="font-bold text-[10px]">¡Nuevo anuncio!</span>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div
+            class="flex flex-grow flex-col mt-3 text-[10px] font-semibold justify-between"
+        >
+            <div class="flex flex-col max-w-45 p-2">
+                <p>
+                    🎮 Gameboy Classic - 40 € Gameboy clásica como nueva.
+                    Perfecto estado, ideal para coleccionistas o amantes de lo
+                    retro.
+                </p>
+                <li class="mt-2 list-none">
+                    <ul>📦 Envío disponible</ul>
+                    <ul>📍 Publicado en Wallapop</ul>
+                    <ul>🔗 Ver en Wallapop</ul>
+                </li>
+            </div>
+            <div class="w-full bg-primary flex rounded-b-[14px] h-8"></div>
+        </div>
+    </div>
+</div>
