@@ -4,19 +4,13 @@ import AboutCardTwo from "../components/AboutCardTwo.astro";
 import Phone from "../components/Phone.astro";
 ---
 
-<section
-    class="flex flex-col items-center mt-30 borders p-30 xl:mt-40 2xl:mt-80"
->
-    <nav class="flex items-center gap-4">
+<section class="flex flex-col items-center mt-30 xl:mt-40 2xl:mt-80 w-full">
+    <nav class="flex justify-center w-full">
         <h1>Como funciona</h1>
     </nav>
-    <div
-        class="grid grid-cols-2 mt-20 w-full gap-20 lg:flex lg:justify-center lg:gap-60"
-    >
+    <div class="flex flex-col mt-15 w-full p-2 gap-20">
         <AboutCard />
-        <div class="lg:row-start-1 row-start-2 col-start-2">
-            <AboutCardTwo />
-        </div>
+        <AboutCardTwo class:list={"self-end"} />
     </div>
-    <Phone class:list={"mt-40"} />
+    <Phone class:list={"mt-20"} />
 </section>

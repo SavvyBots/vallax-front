@@ -1,9 +1,12 @@
 ---
-
+export interface Props {
+    class?: string;
+}
+const { class: className = "" } = Astro.props;
 ---
 
 <div
-    class="w-50 h-44 p-1 flex relative font-semibold lg:w-66 lg:h-55 2xl:w-[28rem] 2xl:h-[25rem]"
+    class=`${className} w-50 h-44 p-1 flex relative font-semibold lg:w-66 lg:h-55 2xl:w-[28rem] 2xl:h-[25rem]`
 >
     <div
         class="border-primary rounded-[15px] flex flex-grow border-2 p-2 justify-end pl-17 bg-my-yellow"
