@@ -9,6 +9,7 @@
     --color-my-yellow: #FFDC7B;
 }
 
+a,
 button {
     @apply duration-700 hover:cursor-pointer;
 }
@@ -25,9 +26,12 @@ body {
     background-color: #fffbf6;
 }
 
+
+
 h1 {
     font-size: 32px;
     font-weight: bold;
+
 }
 
 h2 {
@@ -36,6 +40,18 @@ h2 {
 }
 
 h3 {
-
     font-weight: bold;
+}
+
+
+@media (min-width: 1536px) {
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 35px;
+        font-weight: bold;
+    }
 }
