@@ -9,5 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://savvybots.github.io',
-  base: 'vallax-front'
+  base: 'vallax'
 });
