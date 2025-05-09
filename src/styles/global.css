@@ -24,6 +24,7 @@ body {
     font-family: "Poppins", sans-serif;
     color: #333333;
     background-color: #fffbf6;
+    scroll-behavior: smooth;
 }
 
 
